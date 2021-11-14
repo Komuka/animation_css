@@ -1,0 +1,214 @@
+
+h3{
+  font-family: sans-serif;
+  padding-left: 10px;
+}
+.example{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 10s;
+  box-shadow: 10px 10px 15px rgba(225, 0, 184, 0.25);
+  animation-iteration-count: infinite;
+  position: relative;
+}
+@keyframes example {
+  0%{ background-color: black; left: 0px; top: 0px;}
+  15%{ background-color: blue; left: 0px; top:50px;}
+  25%{ background-color: yellow; left: 80px; top:50px;}
+  50%{ background-color: red; left: 80px; top:0px;}
+  100%{ background-color: red; left: 0px; top:0px;; right:80px;}
+}
+
+
+.heading{
+  padding-top: 50px;
+}
+.example2{
+  margin-top: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: test;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+@keyframes test {
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+  50% { bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+  100% { bottom: 0px; box-shadow: 0 0px 5px rgba(0,0,0,0.5);
+  background-color: #00a550;}
+}
+
+
+.heading2{
+  padding-top: 5px;
+}
+.example3{
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  animation-name:test2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+/*scale - масштабирует элемент в двумерном пространстве
+по горизонтали и вертикали или одновременно в двух
+направлениях*/
+@keyframes test2 {
+  0% {transform: scale(0);background-color: #00a550;}
+  50% {transform: scale(1);background-color: #ff7518;}
+  100% {transform: scale(1);background-color: yellow;}
+}
+
+.heading3{
+  padding-top: 5px;
+}
+.example4{
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: #fde910;
+  animation-name:test3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+}
+@keyframes test3 {
+  0% {opacity: 0; border-radius: 50%;}
+  20% {opacity: 0.2; border-radius: 40%;}
+  50% {opacity: 0.5; border-radius: 30%;}
+  100% {opacity: 1; border-radius: 0;}
+}
+
+
+.heading4{
+  padding-top: 5px;
+}
+.example5{
+  width: 100px;
+  height: 100px;
+	background: #8b00ff;
+	animation-name: test4;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes test4 {
+  0% {box-shadow: 0 0 0 0 rgba(148, 0, 201, 0.4);}
+  70% {box-shadow: 0 0 0 10px rgba(228, 25, 49, 0);}
+  100% {box-shadow: 0 0 0 0 rgba(228, 25, 49, 0);}
+}
+
+
+.heading5{
+  padding-top: 5px;
+}
+.example6{
+  width: 100px;
+  height: 100px;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e,
+  #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+	animation-name: test5;
+  animation-duration: 5s;
+  transition-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes test5 {
+  0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+.heading6{
+  padding-top: 5px;
+}
+.example7{
+  width: 100px;
+  height: 100px;
+  background-color: #000080;
+  position: relative;
+  animation-name: test6;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes test6 {
+  0% {left: 0;}
+  100% {left: 300px;background-color: #00a550;
+  box-shadow: 10px 10px 15px rgba(225, 0, 184, 0.25);}
+}
+
+
+.heading7{
+  padding-top: 5px;
+}
+.example8{
+  width: 100px;
+  height: 100px;
+  background-color: #000080;
+  position: relative;
+  animation-name: test7;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes test7 {
+  0%{top: 0px;}
+  50%{height: 80px;}
+  100%{top:300px;height: 30px; box-shadow: 10px 10px 0px
+  rgba(225, 184, 0, 0.25);}
+}
+
+
+.heading8{
+  padding-top: 300px;
+}
+.example9 {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #f2e8c9;
+  animation: test8;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  position: relative;
+}
+/*skewX - угол наклона*/
+@keyframes test8 {
+  0%, 35% {transform: none;}
+  50%, 60% {transform: skewX(20deg);background-color: #efdecd;}
+  90%, 100% {transform: none;}
+}
+
+
+.heading9{
+  padding-top: 5px;
+}
+.example10 {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #ff4040;
+  animation-name: test9;
+  animation-duration: 2s;
+  transition-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/*rotate - преобразование, которое перемещает элемент
+вокруг неподвижной точки, не деформируя его*/
+
+/*Единица deg определяет угол в градусах*/
+@keyframes test9 {
+  0% {border-radius: 0 0 0 0;transform: rotate(0deg);}
+  25% {border-radius: 50% 0 0 0;transform: rotate(45deg);}
+  50% {border-radius: 50% 50% 0 0;transform: rotate(90deg);}
+  75% {border-radius: 50% 50% 50% 0;transform: rotate(135deg);}
+  100% {border-radius: 50% 50% 50% 50%;transform: rotate(180deg);}
+}
